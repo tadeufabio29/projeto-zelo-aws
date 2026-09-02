@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre o grupo — ZELO</title>
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.sobre-header {
+    background: var(--blue);
+    border-radius: 0 0 30px 30px;
+    padding: 32px 24px 40px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 24px;
+}
+.sobre-header .projeto { font-size: 13px; opacity: 0.8; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+.sobre-header h1 { color: #fff; font-size: 34px; margin: 6px 0; }
+.sobre-header p { opacity: 0.85; font-size: 14px; max-width: 420px; margin: 0 auto 16px; }
+.tech-row { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+.tech-chip { background: rgba(255,255,255,0.18); border-radius: 20px; padding: 5px 14px; font-size: 12px; font-weight: 600; }
+
+.equipe-titulo { font-size: 13px; font-weight: 700; color: var(--text-secondary); letter-spacing: 0.5px; text-transform: uppercase; margin: 0 0 12px; }
+
+.pessoa-card { text-align: center; }
+.avatar-wrap { position: relative; width: 100px; height: 100px; margin: 0 auto 10px; }
+.avatar-wrap img { width: 94px; height: 94px; border-radius: 50%; border: 3px solid; object-fit: cover; }
+.papel-badge {
+    position: absolute; bottom: -2px; right: -2px;
+    width: 28px; height: 28px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    border: 2px solid #fff; font-size: 14px;
+}
+.pessoa-nome { font-size: 18px; font-weight: 700; margin: 4px 0 8px; }
+.papel-tag { display: inline-block; border-radius: 20px; padding: 4px 14px; font-size: 13px; font-weight: 700; margin-bottom: 14px; }
+
+.info-grid { display: flex; align-items: center; background: #F8FAFC; border-radius: 12px; padding: 12px; margin-bottom: 12px; }
+.info-item { flex: 1; }
+.info-item .label { font-size: 10px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; display: block; }
+.info-item .valor { font-size: 13px; font-weight: 700; color: var(--text); }
+.info-div { width: 1px; height: 30px; background: #E2E8F0; }
+
+.contribuicao-box { border-radius: 12px; padding: 12px; text-align: left; }
+.contribuicao-box .label { font-size: 10px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; display: block; margin-bottom: 2px; }
+.contribuicao-box .txt { font-size: 13px; font-weight: 600; }
+
+.disciplina-card { background: var(--text); border-radius: 20px; padding: 24px; text-align: center; color: #fff; margin-top: 8px; }
+.disciplina-card .emoji { font-size: 32px; display: block; margin-bottom: 6px; }
+.disciplina-card h3 { color: #fff; font-size: 16px; margin: 0 0 4px; }
+.disciplina-card p { color: rgba(255,255,255,0.65); font-size: 12px; margin: 0; }
+</style>
+</head>
+<body>
+<header class="topbar">
+    <div class="topbar-inner">
+        <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="ZELO" class="logo-img"> ZELO</a>
+    </div>
+</header>
+
+<div class="sobre-header">
+    <div class="projeto">Projeto</div>
+    <h1>ZELO 💙</h1>
+    <p>Conectando famílias a especialistas em saúde infantil</p>
+    <div class="tech-row">
+        <span class="tech-chip">AWS EC2</span>
+        <span class="tech-chip">AWS S3</span>
+        <span class="tech-chip">HTML/CSS</span>
+        <span class="tech-chip">JavaScript</span>
+    </div>
+</div>
+
+<main class="container" style="padding-top:0">
+    <p class="equipe-titulo">Nossa equipe</p>
+
+    <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr))">
+        <div class="card pessoa-card">
+            <div class="avatar-wrap" style="border-color:transparent">
+                <img src="assets/img/foto_fabio.jpeg" alt="Fabio Tadeu" style="border-color:var(--blue)">
+                <div class="papel-badge" style="background:var(--blue)">🎨</div>
+            </div>
+            <h3 class="pessoa-nome">Fabio Tadeu</h3>
+            <span class="papel-tag" style="background:var(--blue-light);color:var(--blue)">Dev Frontend</span>
+            <div class="info-grid">
+                <div class="info-item"><span class="label">Curso</span><span class="valor">ADS</span></div>
+                <div class="info-div"></div>
+                <div class="info-item"><span class="label">Turno</span><span class="valor">Noturno</span></div>
+                <div class="info-div"></div>
+                <div class="info-item"><span class="label">Unidade</span><span class="valor">Campo Grande</span></div>
+            </div>
+            <div class="contribuicao-box" style="background:var(--blue-light)">
+                <span class="label">Contribuição</span>
+                <span class="txt" style="color:var(--blue)">Responsável pelo front-end do projeto</span>
+            </div>
+        </div>
+
+        <div class="card pessoa-card">
+            <div class="avatar-wrap" style="border-color:transparent">
+                <img src="assets/img/foto_gabrielli.jpeg" alt="Gabrielli Correa" style="border-color:var(--purple)">
+                <div class="papel-badge" style="background:var(--purple)">🔥</div>
+            </div>
+            <h3 class="pessoa-nome">Gabrielli Correa</h3>
+            <span class="papel-tag" style="background:var(--purple-light);color:var(--purple)">Dev Backend</span>
+            <div class="info-grid">
+                <div class="info-item"><span class="label">Curso</span><span class="valor">ADS</span></div>
+                <div class="info-div"></div>
+                <div class="info-item"><span class="label">Turno</span><span class="valor">Noturno</span></div>
+                <div class="info-div"></div>
+                <div class="info-item"><span class="label">Unidade</span><span class="valor">Campo Grande</span></div>
+            </div>
+            <div class="contribuicao-box" style="background:var(--purple-light)">
+                <span class="label">Contribuição</span>
+                <span class="txt" style="color:var(--purple)">Responsável pelo back-end do projeto</span>
+            </div>
+        </div>
+
+        <div class="card pessoa-card">
+            <div class="avatar-wrap" style="border-color:transparent">
+                <img src="assets/img/foto_luana.jpeg" alt="Luana Airosa" style="border-color:#3D9970">
+                <div class="papel-badge" style="background:#3D9970">⚙️</div>
+            </div>
+            <h3 class="pessoa-nome">Luana Airosa</h3>
+            <span class="papel-tag" style="background:#E8F5EE;color:#3D9970">Dev QA</span>
+            <div class="info-grid">
+                <div class="info-item"><span class="label">Curso</span><span class="valor">ADS</span></div>
+                <div class="info-div"></div>
+                <div class="info-item"><span class="label">Turno</span><span class="valor">Noturno</span></div>
+                <div class="info-div"></div>
+                <div class="info-item"><span class="label">Unidade</span><span class="valor">Campo Grande</span></div>
+            </div>
+            <div class="contribuicao-box" style="background:#E8F5EE">
+                <span class="label">Contribuição</span>
+                <span class="txt" style="color:#3D9970">Implementação de funcionalidades, testes e garantia de qualidade (QA)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="disciplina-card">
+        <span class="emoji">🎓</span>
+        <h3>Arquitetura e Infraestrutura · 2026</h3>
+        <p>Centro Universitário Augusto Motta — UNISUAM</p>
+        <p>Prof. Vinicius Silva · 2º Semestre</p>
+    </div>
+</main>
+<footer class="footer"><p>ZELO Web &mdash; apoio à saúde para famílias de crianças atípicas</p></footer>
+</body>
+</html>

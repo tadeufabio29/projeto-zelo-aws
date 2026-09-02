@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu perfil — ZELO</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="topbar-inner">
+        <a href="home.html" class="logo">ZELO</a>
+        <nav class="nav">
+            <a href="home.html">Início</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="perfil.html">Meu perfil</a>
+            <span class="user-name">Camila Ferreira</span>
+            <a href="../index.html" class="btn-sair">Sair</a>
+        </nav>
+    </div>
+</header>
+<main class="container">
+    <h1>Meu perfil profissional</h1>
+    <p class="subtitle">Terapia Ocupacional · CREFITO 12/34567</p>
+
+    <h2>Painel de relatório</h2>
+    <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(180px, 1fr))">
+        <div class="card" style="text-align:center">
+            <span class="badge badge-blue">Este mês</span>
+            <h3 style="margin:10px 0 4px;font-size:28px">24</h3>
+            <p style="margin:0;color:var(--text-muted)">Consultas realizadas</p>
+        </div>
+        <div class="card" style="text-align:center">
+            <span class="badge badge-green">Faturamento</span>
+            <h3 style="margin:10px 0 4px;font-size:28px">R$ 3.840,00</h3>
+            <p style="margin:0;color:var(--text-muted)">Total no mês</p>
+        </div>
+        <div class="card" style="text-align:center">
+            <span class="badge badge-purple">Histórico</span>
+            <h3 style="margin:10px 0 4px;font-size:28px">187</h3>
+            <p style="margin:0;color:var(--text-muted)">Consultas no total</p>
+        </div>
+    </div>
+
+    <h2 style="margin-top:32px">Editar perfil</h2>
+    <form class="card" onsubmit="event.preventDefault(); alert('Perfil atualizado (demonstração visual).');">
+        <div><label>Anos de experiência</label><input type="text" value="8"></div>
+        <div><label>Valor da consulta</label><input type="text" value="R$ 160,00"></div>
+        <div>
+            <label>Modalidades</label>
+            <div class="form-row">
+                <label><input type="checkbox" checked> Online</label>
+                <label><input type="checkbox" checked> Presencial</label>
+                <label><input type="checkbox" checked> Grupo</label>
+            </div>
+        </div>
+        <div><label>Bio</label><textarea>Especialista em integração sensorial e desenvolvimento infantil, com foco em autonomia e qualidade de vida para crianças atípicas e suas famílias.</textarea></div>
+        <button class="btn" type="submit">Salvar alterações</button>
+    </form>
+</main>
+<footer class="footer"><p>ZELO Web &mdash; apoio à saúde para famílias de crianças atípicas</p></footer>
+</body>
+</html>

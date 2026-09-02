@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diário — ZELO</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="topbar-inner">
+        <a href="home.html" class="logo">ZELO</a>
+        <nav class="nav">
+            <a href="home.html">Início</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="diario.html">Diário</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="suporte.html">Suporte</a>
+            <span class="user-name">Mariana Costa</span>
+            <a href="../index.html" class="btn-sair">Sair</a>
+        </nav>
+    </div>
+</header>
+<main class="container">
+    <h1>Diário de acompanhamento</h1>
+    <p class="subtitle">Registre momentos, progresso e como foi o dia.</p>
+
+    <div class="card">
+        <h2>Novo registro</h2>
+        <form onsubmit="event.preventDefault(); alert('Registro salvo (demonstração visual).');">
+            <div><label>Data</label><input type="date"></div>
+            <div>
+                <label>Humor</label>
+                <div class="form-row">
+                    <label class="chip"><input type="radio" name="humor" style="display:none"> Ótimo</label>
+                    <label class="chip"><input type="radio" name="humor" style="display:none"> Bem</label>
+                    <label class="chip"><input type="radio" name="humor" style="display:none"> Ok</label>
+                    <label class="chip"><input type="radio" name="humor" style="display:none"> Difícil</label>
+                    <label class="chip"><input type="radio" name="humor" style="display:none"> Exausto</label>
+                </div>
+            </div>
+            <div><label>Título</label><input type="text"></div>
+            <div><label>Texto</label><textarea required></textarea></div>
+            <button class="btn" type="submit">Salvar registro</button>
+        </form>
+    </div>
+
+    <h2 style="margin-top:32px">Registros anteriores</h2>
+
+    <div class="card">
+        <span class="badge badge-green">Ótimo</span>
+        <h3 style="margin:8px 0 2px">Primeira semana de terapia ocupacional</h3>
+        <p style="margin:0 0 8px;color:var(--text-muted);font-size:13px">28/08/2026</p>
+        <p>Hoje o Miguel participou de toda a sessão sem resistência. A terapeuta notou avanço na coordenação motora fina.</p>
+        <div class="form-row">
+            <span class="badge badge-blue">Progresso</span>
+            <span class="badge badge-blue">Terapia</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <span class="badge badge-amber">Ok</span>
+        <h3 style="margin:8px 0 2px">Dia difícil na escola</h3>
+        <p style="margin:0 0 8px;color:var(--text-muted);font-size:13px">25/08/2026</p>
+        <p>Teve dificuldade de adaptação na troca de sala, mas conseguiu se acalmar após 10 minutos com apoio da professora.</p>
+        <div class="form-row">
+            <span class="badge badge-blue">Escola</span>
+        </div>
+    </div>
+</main>
+<footer class="footer"><p>ZELO Web &mdash; apoio à saúde para famílias de crianças atípicas</p></footer>
+<script>
+document.querySelectorAll('.chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+        const input = chip.querySelector('input');
+        document.querySelectorAll(`input[name="${input.name}"]`).forEach(i => i.closest('.chip').classList.remove('selected'));
+        input.checked = true;
+        chip.classList.add('selected');
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suporte — ZELO</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<style>
+.dica-card { display: flex; gap: 14px; align-items: flex-start; }
+.dica-icone {
+    width: 44px; height: 44px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; flex-shrink: 0;
+}
+.dica-titulo { margin: 0 0 4px; font-size: 16px; }
+.dica-texto { margin: 0; color: var(--text-muted); font-size: 14px; line-height: 1.5; }
+.busca-row { display: flex; gap: 8px; margin-bottom: 4px; }
+.busca-row input { flex: 1; }
+</style>
+</head>
+<body>
+<header class="topbar">
+    <div class="topbar-inner">
+        <a href="home.html" class="logo">ZELO</a>
+        <nav class="nav">
+            <a href="home.html">Início</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="diario.html">Diário</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="suporte.html">Suporte</a>
+            <span class="user-name">Mariana Costa</span>
+            <a href="../index.html" class="btn-sair">Sair</a>
+        </nav>
+    </div>
+</header>
+<main class="container">
+    <h1>Suporte para os pais 💙</h1>
+    <p class="subtitle">Direitos, garantias legais e orientações para famílias de crianças atípicas e com condições neurodivergentes (TEA, TDAH e outras).</p>
+
+    <h2>Principais leis e garantias</h2>
+    <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))">
+        <div class="card dica-card">
+            <div class="dica-icone" style="background:var(--blue-light)">⚖️</div>
+            <div>
+                <h3 class="dica-titulo">Lei Berenice Piana (12.764/2012)</h3>
+                <p class="dica-texto">Reconhece a pessoa com Transtorno do Espectro Autista (TEA) como pessoa com deficiência para todos os efeitos legais, garantindo acesso a políticas de inclusão.</p>
+            </div>
+        </div>
+        <div class="card dica-card">
+            <div class="dica-icone" style="background:var(--purple-light)">🪪</div>
+            <div>
+                <h3 class="dica-titulo">Lei Romeo Mion (13.977/2020)</h3>
+                <p class="dica-texto">Cria a Carteira de Identificação da Pessoa com TEA (Ciptea), documento gratuito que facilita o acesso a atendimento prioritário e outros direitos.</p>
+            </div>
+        </div>
+        <div class="card dica-card">
+            <div class="dica-icone" style="background:var(--success-bg)">🏫</div>
+            <div>
+                <h3 class="dica-titulo">Lei Brasileira de Inclusão (13.146/2015)</h3>
+                <p class="dica-texto">Garante educação inclusiva, prioridade em atendimentos de saúde, isenção de impostos e acesso a benefícios assistenciais, como o BPC/LOAS.</p>
+            </div>
+        </div>
+        <div class="card dica-card">
+            <div class="dica-icone" style="background:var(--warning-bg)">🩺</div>
+            <div>
+                <h3 class="dica-titulo">Diagnóstico e cuidado pelo SUS</h3>
+                <p class="dica-texto">Toda criança tem direito à triagem, identificação precoce e acompanhamento multiprofissional gratuito pela rede pública de saúde.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 style="margin-top:32px">Buscar mais leis e informações</h2>
+    <p class="subtitle" style="margin-top:-8px">Consulta ao portal público de legislação do governo (LexML).</p>
+
+    <div class="card">
+        <form action="https://www.lexml.gov.br/busca/search" method="get" target="_blank">
+            <div class="busca-row">
+                <input type="text" name="q" placeholder="Ex: autismo, TDAH, inclusão escolar...">
+                <button class="btn btn-sm" type="submit">Buscar</button>
+            </div>
+        </form>
+        <p style="margin:8px 0 0;color:var(--text-muted);font-size:13px">Abre os resultados em uma nova aba, direto no site oficial do LexML.</p>
+    </div>
+</main>
+<footer class="footer"><p>ZELO Web &mdash; apoio à saúde para famílias de crianças atípicas</p></footer>
+</body>
+</html>

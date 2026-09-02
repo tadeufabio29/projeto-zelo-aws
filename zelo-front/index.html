@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrar — ZELO</title>
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="topbar-inner">
+        <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="ZELO" class="logo-img"> ZELO</a>
+    </div>
+</header>
+<main class="container">
+    <div class="auth-wrap">
+        <img src="assets/img/logo.png" alt="ZELO" class="auth-logo">
+        <img src="assets/img/onboarding.png" alt="" class="auth-illustration">
+        <p class="subtitle" style="text-align:center">Apoio à saúde para famílias de crianças atípicas</p>
+
+        <form onsubmit="event.preventDefault(); window.location.href='familiar/home.html';">
+            <div>
+                <label>E-mail</label>
+                <input type="email" name="email" placeholder="seuemail@exemplo.com" required>
+            </div>
+            <div>
+                <label>Senha</label>
+                <input type="password" placeholder="••••••••" required>
+            </div>
+            <button class="btn" type="submit">Entrar</button>
+        </form>
+
+        <div class="auth-links">
+            Ainda não tem conta?<br>
+            <a href="cadastro_familiar.html">Sou familiar</a> &middot;
+            <a href="cadastro_profissional.html">Sou profissional</a>
+        </div>
+        <div class="auth-links" style="margin-top:8px">
+            <a href="sobre.html">Sobre o projeto</a>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <p>ZELO Web &mdash; apoio à saúde para famílias de crianças atípicas</p>
+</footer>
+</body>
+</html>

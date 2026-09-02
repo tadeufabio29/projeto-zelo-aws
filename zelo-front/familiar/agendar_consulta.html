@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agendar consulta — ZELO</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="topbar-inner">
+        <a href="home.html" class="logo">ZELO</a>
+        <nav class="nav">
+            <a href="home.html">Início</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="diario.html">Diário</a>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="suporte.html">Suporte</a>
+            <span class="user-name">Mariana Costa</span>
+            <a href="../index.html" class="btn-sair">Sair</a>
+        </nav>
+    </div>
+</header>
+<main class="container">
+    <h1>Agendar com Camila Ferreira</h1>
+    <p class="subtitle">Terapia Ocupacional</p>
+
+    <form class="card" onsubmit="event.preventDefault(); window.location.href='agenda.html';">
+        <div>
+            <label>Data</label>
+            <input type="date" required>
+        </div>
+        <div>
+            <label>Horário</label>
+            <div class="form-row">
+                <label class="chip"><input type="radio" name="horario" style="display:none"> 08:00</label>
+                <label class="chip"><input type="radio" name="horario" style="display:none"> 09:00</label>
+                <label class="chip"><input type="radio" name="horario" style="display:none"> 10:00</label>
+                <label class="chip"><input type="radio" name="horario" style="display:none"> 11:00</label>
+                <label class="chip"><input type="radio" name="horario" style="display:none"> 13:00</label>
+                <label class="chip"><input type="radio" name="horario" style="display:none"> 14:00</label>
+                <label class="chip"><input type="radio" name="horario" style="display:none"> 15:00</label>
+                <label class="chip"><input type="radio" name="horario" style="display:none"> 16:00</label>
+            </div>
+        </div>
+        <div>
+            <label>Modalidade</label>
+            <div class="form-row">
+                <label class="chip"><input type="radio" name="modalidade" style="display:none"> Videochamada</label>
+                <label class="chip"><input type="radio" name="modalidade" style="display:none"> Presencial</label>
+                <label class="chip"><input type="radio" name="modalidade" style="display:none"> Grupo (gratuito)</label>
+            </div>
+        </div>
+        <button class="btn" type="submit">Confirmar agendamento</button>
+    </form>
+</main>
+<footer class="footer"><p>ZELO Web &mdash; apoio à saúde para famílias de crianças atípicas</p></footer>
+<script>
+document.querySelectorAll('.chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+        const input = chip.querySelector('input');
+        document.querySelectorAll(`input[name="${input.name}"]`).forEach(i => i.closest('.chip').classList.remove('selected'));
+        input.checked = true;
+        chip.classList.add('selected');
+    });
+});
+</script>
+</body>
+</html>

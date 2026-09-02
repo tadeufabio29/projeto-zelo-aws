@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro de profissional — ZELO</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner"><a href="index.html" class="logo">ZELO</a></div></header>
+<main class="container">
+    <div class="auth-wrap" style="max-width:520px">
+        <h1>Cadastro — Profissional</h1>
+        <p class="subtitle" style="text-align:center">Ofereça atendimento especializado às famílias na plataforma</p>
+
+        <form onsubmit="event.preventDefault(); window.location.href='profissional/home.html';">
+            <div><label>Nome completo</label><input type="text" name="nome" required></div>
+            <div><label>E-mail</label><input type="email" name="email" required></div>
+            <div><label>Senha</label><input type="password" name="senha" required minlength="6"></div>
+            <div><label>Confirmar senha</label><input type="password" name="confirmar_senha" required minlength="6"></div>
+            <div><label>CPF</label><input type="text" name="cpf" inputmode="numeric" maxlength="11" pattern="[0-9]{11}" title="Digite os 11 números do CPF, sem pontos, traços ou letras" placeholder="Somente números"></div>
+            <div><label>Telefone</label><input type="text" name="telefone"></div>
+            <hr style="border-color:var(--border)">
+            <div>
+                <label>Especialidade</label>
+                <select>
+                    <option>Psicologia</option>
+                    <option>Fonoaudiologia</option>
+                    <option>Terapia Ocupacional</option>
+                    <option>Fisioterapia</option>
+                    <option>Nutrição</option>
+                    <option>Musicoterapia</option>
+                    <option>Psicopedagogia</option>
+                    <option>Educação Física</option>
+                    <option>Neuropsicologia</option>
+                    <option>Psicomotricidade</option>
+                </select>
+            </div>
+            <div><label>Registro profissional (ex: CRP 05/12345)</label><input type="text"></div>
+            <div><label>Anos de experiência</label><input type="text"></div>
+            <div><label>Valor da consulta</label><input type="text" placeholder="R$ 180,00"></div>
+            <div>
+                <label>Modalidades de atendimento</label>
+                <div class="form-row">
+                    <label><input type="checkbox"> Online</label>
+                    <label><input type="checkbox"> Presencial</label>
+                    <label><input type="checkbox"> Grupo</label>
+                </div>
+            </div>
+            <div><label>Bio</label><textarea></textarea></div>
+            <button class="btn" type="submit">Criar conta</button>
+        </form>
+
+        <div class="auth-links">Já tem conta? <a href="index.html">Entrar</a></div>
+    </div>
+</main>
+<footer class="footer"><p>ZELO Web &mdash; apoio à saúde para famílias de crianças atípicas</p></footer>
+</body>
+</html>
