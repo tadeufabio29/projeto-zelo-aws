@@ -9,7 +9,7 @@
 <body>
 <header class="topbar">
     <div class="topbar-inner">
-        <a href="home.html" class="logo">ZELO</a>
+        <a href="home.html" class="logo"><img src="../assets/img/zelo-icon.png" alt="" class="brand-icon"> ZELO</a>
         <nav class="nav">
             <a href="home.html">Início</a>
             <a href="agenda.html">Agenda</a>
@@ -23,14 +23,32 @@
     <h1>Agenda</h1>
     <p class="subtitle">Todos os seus atendimentos.</p>
 
-    <table>
-        <thead><tr><th>Familiar</th><th>Data</th><th>Modalidade</th><th>Status</th></tr></thead>
-        <tbody>
-            <tr><td>Mariana Costa</td><td>05/09/2026 14:00</td><td>Online</td><td><span class="badge badge-blue">Agendada</span></td></tr>
-            <tr><td>Renata Alves</td><td>06/09/2026 10:00</td><td>Presencial</td><td><span class="badge badge-blue">Agendada</span></td></tr>
-            <tr><td>Fernanda Dias</td><td>22/08/2026 09:00</td><td>Online</td><td><span class="badge badge-green">Concluída</span></td></tr>
-        </tbody>
-    </table>
+    <div class="grid">
+        <div class="card card-person">
+            <div class="avatar avatar-blue">MC</div>
+            <div>
+                <h3 style="margin:0 0 4px">Mariana Costa</h3>
+                <p style="margin:0 0 8px;color:var(--text-muted)">📅 05/09/2026 14:00 · 💻 Online</p>
+                <span class="badge badge-blue status-pill">🕒 Agendada</span>
+            </div>
+        </div>
+        <div class="card card-person">
+            <div class="avatar avatar-purple">RA</div>
+            <div>
+                <h3 style="margin:0 0 4px">Renata Alves</h3>
+                <p style="margin:0 0 8px;color:var(--text-muted)">📅 06/09/2026 10:00 · 🏥 Presencial</p>
+                <span class="badge badge-blue status-pill">🕒 Agendada</span>
+            </div>
+        </div>
+        <div class="card card-person">
+            <div class="avatar avatar-green">FD</div>
+            <div>
+                <h3 style="margin:0 0 4px">Fernanda Dias</h3>
+                <p style="margin:0 0 8px;color:var(--text-muted)">📅 22/08/2026 09:00 · 💻 Online</p>
+                <span class="badge badge-green status-pill">✅ Concluída</span>
+            </div>
+        </div>
+    </div>
 </main>
 <footer class="footer"><p>ZELO Web &mdash; apoio à saúde para famílias de crianças atípicas</p></footer>
 </body>

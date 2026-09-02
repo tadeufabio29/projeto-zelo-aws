@@ -9,7 +9,7 @@
 <body>
 <header class="topbar">
     <div class="topbar-inner">
-        <a href="home.html" class="logo">ZELO</a>
+        <a href="home.html" class="logo"><img src="../assets/img/zelo-icon.png" alt="" class="brand-icon"> ZELO</a>
         <nav class="nav">
             <a href="home.html">Início</a>
             <a href="agenda.html">Agenda</a>
@@ -20,25 +20,36 @@
     </div>
 </header>
 <main class="container">
-    <h1>Meu perfil profissional</h1>
-    <p class="subtitle">Terapia Ocupacional · CREFITO 12/34567</p>
+    <div class="card card-person" style="margin-bottom:24px">
+        <div class="avatar avatar-purple" style="width:64px;height:64px;font-size:22px">🖐️</div>
+        <div>
+            <h1 style="margin:0 0 4px">Camila Ferreira</h1>
+            <p class="subtitle" style="margin:0">Terapia Ocupacional · CREFITO 12/34567</p>
+        </div>
+    </div>
 
     <h2>Painel de relatório</h2>
-    <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(180px, 1fr))">
-        <div class="card" style="text-align:center">
-            <span class="badge badge-blue">Este mês</span>
-            <h3 style="margin:10px 0 4px;font-size:28px">24</h3>
-            <p style="margin:0;color:var(--text-muted)">Consultas realizadas</p>
+    <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))">
+        <div class="card stat-card">
+            <div class="stat-icon stat-icon-blue">📅</div>
+            <div>
+                <div class="stat-number">24</div>
+                <div class="stat-label">Consultas este mês</div>
+            </div>
         </div>
-        <div class="card" style="text-align:center">
-            <span class="badge badge-green">Faturamento</span>
-            <h3 style="margin:10px 0 4px;font-size:28px">R$ 3.840,00</h3>
-            <p style="margin:0;color:var(--text-muted)">Total no mês</p>
+        <div class="card stat-card">
+            <div class="stat-icon stat-icon-green">💰</div>
+            <div>
+                <div class="stat-number">R$ 3.840</div>
+                <div class="stat-label">Faturamento no mês</div>
+            </div>
         </div>
-        <div class="card" style="text-align:center">
-            <span class="badge badge-purple">Histórico</span>
-            <h3 style="margin:10px 0 4px;font-size:28px">187</h3>
-            <p style="margin:0;color:var(--text-muted)">Consultas no total</p>
+        <div class="card stat-card">
+            <div class="stat-icon stat-icon-purple">📊</div>
+            <div>
+                <div class="stat-number">187</div>
+                <div class="stat-label">Consultas no total</div>
+            </div>
         </div>
     </div>
 
